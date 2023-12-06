@@ -40,7 +40,7 @@ def save_history(chat_id, message, answer):
             history = json.load(file)
     except (FileNotFoundError, json.JSONDecodeError):
         history = []
-
+   
     history.append({
         'message': message,
         'answer': answer,
